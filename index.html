@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Start boostrap</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  fixed-top p-2" id="mainNav">
+        <div class="container p-3">
+            <a class="navbar-brand" href="#"><img src="image/navbar-logo.svg" alt="" class="" id="nav-image" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link " href="#boutton" id="active">Services</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- debut entete -->
+    <header id="entete">
+        <div class="container p-5">
+            <div class="row text-center p-5">
+                <div class="mt-5">
+                    <h3 class="text-white p-2 fst-italic fs-1 mt-5">Welcome To Our Studio!</h3>
+                </div>
+                <div>
+                    <h1 class="text-white text-uppercase p-2 fw-bold display-2">IT'S NICE TO MEET YOU</h1>
+                </div>
+                <div class="p-5">
+                    <button class="btn  text-uppercase fw-bold p-4 text-white btn-warning " id="boutton">tell me more</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- debut main -->
+    <main>
+        <section class="services mt-5" id="service">
+            <div class="container">
+                <div class="row text-center p-4">
+                    <h3 class="fw-bold fs-1">SERVICES</h3>
+                    <p class="fst-italic fs-5 gris">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="">
+                            <div id="div" class="bg-warning  ">
+                                <i class="bi bi-cart3 display-2 text-white fw-bold" ></i>
+                            </div>
+                            <h5 class="mt-5 fw-bold">E-Commerce</h5>
+                            <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div>
+                            <div id="div" class="bg-warning  ">
+                            <i class="bi bi-laptop display-2 text-white"></i>
+                        </div>
+                            <h5 class="mt-5 fw-bold">Responsive Design</h5>
+                            <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div>
+                            <div id="div" class="bg-warning  ">
+                            <i class="bi bi-lock-fill display-2 bg-warning  text-white" id="icone1"></i> 
+                        </div>                       </div>
+                            <h5 class="mt-5 fw-bold">Web Security</h5>
+                            <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section id="portfolio" class="mt-5">
+            <div class="container p-5">
+                <div class="row text-center p-4">
+                    <h2 class="fw-bold">PORTFOLIO</h2>
+                    <p class="fst-italic gris">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="card btn border-0 "data-bs-toggle="offcanvas" data-bs-target="#infoProjet1"
+                        aria-controls="infoProjet1">
+                            <img src="image/montre.jpg" class="card-img-top" alt="..." >
+                            <div class="card-body text-center bg-white">
+                                <h5 class="card-title">Threads</h5>
+                                <p class="card-text gris">Illustration</p>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1"
+                                 aria-labelledby="titelProjet1">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <h2 class="offcanvas-title text-center" id="titelProjet1">PROJECT NAME</h2>
+
+                                    <p class="gris text-center">Lorem ipsum dolor sit amet consectetur.</p>
+
+                                    <!-- Carousel -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <div id="carouselProject1" class="carousel slide  h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                           <div class="carousel-inner ">
+                                               <div class="carousel-item  active" data-bs-interval="10000">
+                                                   <img src="image/montre.jpg"
+                                                        class=" p-5" alt="Image slide 1">
+                                               </div>
+                                               
+                                           </div>
+                                           <div class="d-none d-md-block mt-5">
+                                               <p class="text-center fw-bold">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                               <p><strong>Client:</strong>Threads</p>
+                                               <p><strong>Category:</strong>Illustration</p>
+                                               <button type="button" class="btn text-reset bg-warning  p-3" data-bs-dismiss="offcanvas"
+                                               aria-label="Close">
+                                               <i class="bi bi-x-lg text-white"></i>
+                                               <span class="text-white fw-bold"> Close project</span></button>
+                                           </div>
+                                       </div>
+                                        </div>
+                                  
+                                    </div>
+                              
+                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <div class="card btn border-0 "data-bs-toggle="offcanvas" data-bs-target="#infoProjet1"
+                            aria-controls="infoProjet1">
+                                <img src="image/coco cola.jpg" class="card-img-top" alt="..." >
+                                <div class="card-body text-center bg-white">
+                                    <h5 class="card-title">Lines</h5>
+                                    <p class="card-text gris">Branding</p>
+                                </div>
+                                <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1"
+                                     aria-labelledby="titelProjet1">
+                                    <div class="offcanvas-header">
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <h2 class="offcanvas-title text-center" id="titelProjet1">PROJECT NAME</h2>
+
+                                        <p class="gris text-center">Lorem ipsum dolor sit amet consectetur.</p>
+
+                                        <!-- Carousel -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <div id="carouselProject1" class="carousel slide  h-100"
+                                                data-bs-ride="carousel" data-bs-touch="true">
+                                               <div class="carousel-inner ">
+                                                   <div class="carousel-item  active" data-bs-interval="10000">
+                                                       <img src="image/coco cola.jpg"
+                                                            class=" p-5" alt="Image slide 1">
+                                                   </div>
+                                                   
+                                               </div>
+                                               <div class="d-none d-md-block mt-5">
+                                                   <p class="text-center fw-bold">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                                   <p><strong>Client:</strong>Threads</p>
+                                                   <p><strong>Category:</strong>Illustration</p>
+                                                   <button type="button" class="btn text-reset bg-warning  p-3" data-bs-dismiss="offcanvas"
+                                                   aria-label="Close">
+                                                   <i class="bi bi-x-lg text-white"></i>
+                                                   <span class="text-white fw-bold"> Close project</span></button>
+                                               </div>
+                                           </div>
+                                            </div>
+                                      
+                                        </div>
+                                  
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- parti2 -->
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card btn border-0 "data-bs-toggle="offcanvas" data-bs-target="#infoProjet1"
+                    aria-controls="infoProjet1">
+                        <img src="image/chaussure.jpg" class="card-img-top" alt="..." >
+                        <div class="card-body text-center bg-white bg-white">
+                            <h5 class="card-title">Explore</h5>
+                            <p class="card-text gris">Graphic Design</p>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1"
+                             aria-labelledby="titelProjet1">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <h2 class="offcanvas-title text-center" id="titelProjet1">PROJECT NAME</h2>
+
+                                <p class="gris text-center">Lorem ipsum dolor sit amet consectetur.</p>
+
+                                <!-- Carousel -->
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="carouselProject1" class="carousel slide  h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                       <div class="carousel-inner ">
+                                           <div class="carousel-item  active" data-bs-interval="10000">
+                                               <img src="image/chaussure.jpg"
+                                                    class=" p-5" alt="">
+                                           </div>
+                                           
+                                       </div>
+                                       <div class="d-none d-md-block mt-5">
+                                           <p class="text-center fw-bold">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                           <p><strong>Client:</strong>Threads</p>
+                                           <p><strong>Category:</strong>Illustration</p>
+                                           <button type="button" class="btn text-reset bg-warning  p-3" data-bs-dismiss="offcanvas"
+                                           aria-label="Close">
+                                           <i class="bi bi-x-lg text-white"></i>
+                                           <span class="text-white fw-bold"> Close project</span></button>
+                                       </div>
+                                   </div>
+                                    </div>
+                              
+                                </div>
+                          
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="div">
+                        <div class="card btn border-0 "data-bs-toggle="offcanvas" data-bs-target="#infoProjet1"
+                        aria-controls="infoProjet1">
+                            <img src="image/ordi.jpg" class="card-img-top" alt="..." >
+                            <div class="card-body text-center bg-white">
+                                <h5 class="card-title">Southwest</h5>
+                                <p class="card-text gris">Website Design</p>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1"
+                                 aria-labelledby="titelProjet1">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <h2 class="offcanvas-title text-center" id="titelProjet1">PROJECT NAME</h2>
+
+                                    <p class="gris text-center">Lorem ipsum dolor sit amet consectetur.</p>
+
+                                    <!-- Carousel -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <div id="carouselProject1" class="carousel slide  h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                           <div class="carousel-inner ">
+                                               <div class="carousel-item  active" data-bs-interval="10000">
+                                                   <img src="image/ordi.jpg"
+                                                        class=" p-5" alt="Image slide 1">
+                                               </div>
+                                               
+                                           </div>
+                                           <div class="d-none d-md-block mt-5">
+                                               <p class="text-center fw-bold">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                               <p><strong>Client:</strong>Threads</p>
+                                               <p><strong>Category:</strong>Illustration</p>
+                                               <button type="button" class="btn text-reset bg-warning  p-3" data-bs-dismiss="offcanvas"
+                                               aria-label="Close">
+                                               <i class="bi bi-x-lg text-white"></i>
+                                               <span class="text-white fw-bold"> Close project</span></button>
+                                           </div>
+                                       </div>
+                                        </div>
+                                  
+                                    </div>
+                              
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- parti3 -->
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card btn border-0 "data-bs-toggle="offcanvas" data-bs-target="#infoProjet1"
+                aria-controls="infoProjet1">
+                    <img src="image/rouge.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body text-center bg-white">
+                        <h5 class="card-title">Finish</h5>
+                        <p class="card-text gris">Identity</p>
+                    </div>
+                    <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1"
+                         aria-labelledby="titelProjet1">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <h2 class="offcanvas-title text-center" id="titelProjet1">PROJECT NAME</h2>
+
+                            <p class="gris text-center">Lorem ipsum dolor sit amet consectetur.</p>
+
+                            <!-- Carousel -->
+                            <div class="row">
+                                <div class="col">
+                                    <div id="carouselProject1" class="carousel slide  h-100"
+                                    data-bs-ride="carousel" data-bs-touch="true">
+                                   <div class="carousel-inner ">
+                                       <div class="carousel-item  active" data-bs-interval="10000">
+                                           <img src="image/rouge.jpg"
+                                                class=" p-5" alt="">
+                                       </div>
+                                       
+                                   </div>
+                                   <div class="d-none d-md-block mt-5">
+                                       <p class="text-center fw-bold">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                       <p><strong>Client:</strong>Threads</p>
+                                       <p><strong>Category:</strong>Illustration</p>
+                                       <button type="button" class="btn text-reset bg-warning  p-3" data-bs-dismiss="offcanvas"
+                                       aria-label="Close">
+                                       <i class="bi bi-x-lg text-white"></i>
+                                       <span class="text-white fw-bold"> Close project</span></button>
+                                   </div>
+                               </div>
+                                </div>
+                          
+                            </div>
+                      
+                    
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="div">
+                    <div class="card btn border-0 "data-bs-toggle="offcanvas" data-bs-target="#infoProjet1"
+                    aria-controls="infoProjet1">
+                        <img src="image/ceinture.jpg" class="card-img-top" alt="..." >
+                        <div class="card-body text-center bg-white">
+                            <h5 class="card-title">Window</h5>
+                            <p class="card-text gris">Photography</p>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1"
+                             aria-labelledby="titelProjet1">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <h2 class="offcanvas-title text-center" id="titelProjet1">PROJECT NAME</h2>
+
+                                <p class="gris text-center">Lorem ipsum dolor sit amet consectetur.</p>
+
+                                <!-- Carousel -->
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="carouselProject1" class="carousel slide  h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                       <div class="carousel-inner ">
+                                           <div class="carousel-item  active" data-bs-interval="10000">
+                                               <img src="image/ceinture.jpg"
+                                                    class=" p-5" alt="Image slide 1">
+                                           </div>
+                                           
+                                       </div>
+                                       <div class="d-none d-md-block mt-5">
+                                           <p class="text-center fw-bold">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                           <p><strong>Client:</strong>Threads</p>
+                                           <p><strong>Category:</strong>Illustration</p>
+                                           <button type="button" class="btn text-reset bg-warning  p-3" data-bs-dismiss="offcanvas"
+                                           aria-label="Close">
+                                           <i class="bi bi-x-lg text-white"></i>
+                                           <span class="text-white fw-bold"> Close project</span></button>
+                                       </div>
+                                   </div>
+                                    </div>
+                              
+                                </div>
+                          
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            </div>
+        </section>
+        <!-- ---about--- -->
+
+        <section id="about" class="mt-5">
+            <div class="container">
+                <div class="row text-center p-5">
+                    <h2 class="fw-bold fs-1">ABOUT</h2>
+                    <p class="gris fst-italic">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="row">
+                    <ul class="timeline p-5">
+                        <li>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid w-100 " src="image/about1.jpg" alt="..."></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/about2.jpg" alt="..."></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>March 2011</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
+                                </div>
+                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/about3.jpg" alt="..."></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2015</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid " src="image/about4.jpg" alt="..."></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2020</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4 class="mt-4">
+                                    Be Part
+                                    <br>
+                                    Of Our
+                                    <br>
+                                    Story!
+                                </h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---our-team--- -->
+        <section id="team" class="mt-5">
+            <div class="container">
+                <div class="row p-5">
+                    <h2 class="text-center fw-bold p-1 mt-4">OUR AMAZING TEAM</h2>
+                    <p class="gris text-center fst-italic ">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="p-2 gray">
+                            <img src="image/personne1.jpg" alt="" class="rounded-circle w-100">
+                        </div>
+                        <div>
+                            <h3 class="fw-bold text-center">Parveen Anand</h3>
+                            <p class="gris text-center">Lead Designer</p>
+                        </div>
+                        <div id="social" class="text-center p-4 d-flex align item-center justify-content-center">
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-twitter fs-5   text-white" id="sociale"></i>
+                            </div>
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-facebook fs-5 p-1 text-white" id="sociale"></i>
+                            </div>
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-linkedin fs-5 p-1  text-white" id="sociale"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="p-2 gray">
+                            <img src="image/personna2.jpg" alt="" class="rounded-circle w-100">
+                        </div>
+                        <div>
+                            <h3 class="fw-bold text-center">Parveen Anand</h3>
+                            <p class="gris text-center">Lead Designer</p>
+                        </div>
+                        <div id="social" class="text-center p-4 d-flex align item-center justify-content-center">
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-twitter fs-5   text-white" id="sociale"></i>
+                            </div>
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-facebook fs-5 p-1 text-white" id="sociale"></i>
+                            </div>
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-linkedin fs-5 p-1  text-white" id="sociale"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="p-2 gray">
+                            <img src="image/personna3.jpg" alt="" class="rounded-circle w-100">
+                        </div>
+                        <div>
+                            <h3 class="fw-bold text-center">Parveen Anand</h3>
+                            <p class="gris text-center">Lead Designer</p>
+                        </div>
+                        <div id="social" class="text-center p-4 d-flex align item-center justify-content-center">
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-twitter fs-5   text-white" id="sociale"></i>
+                            </div>
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-facebook fs-5 p-1 text-white" id="sociale"></i>
+                            </div>
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-linkedin fs-5 p-1  text-white" id="sociale"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <P class="text-center gris fs-5 p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos <br> non quis ad perspiciatis, totam corporis ea, alias ut unde.</P>
+                </div>
+            </div>
+        </section>
+
+        <!-- sponsor -->
+        <section id="sposor" class="mt-4">
+            <div class="container">
+                <div class="row align-item-center p-2">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex align-item-center justify-content-center">
+                            <img src="image/microsoft.svg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div id="google">
+                            <img src="image/google.svg" alt="" class="w-75 ms-5" >
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <!-- <div> -->
+                            <img src="image/facebook.svg" alt="" class="w-75">
+                        <!-- </div> -->
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <!-- <div> -->
+                            <img src="image/ibm.svg" alt="" class="w-50">
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact-us -->
+        <section id="contact" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center fw-bold">CONTACT US</h2>
+                    <p class="gris fst-italic ">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 ">
+                            <div class="form-group">
+                                <input type="text" class="form-control p-3 fs-5" placeholder="Your Name*" required>
+                            </div>
+                            <div class="mt-4 form-group">
+                                <input type="email" class="form-control p-3 fs-5" placeholder="Your Email*" required>
+                            </div>
+                            <div class="mt-4 form-group">
+                                <input type="number" class="form-control p-3 fs-5" placeholder="Your Phone* reiciendis">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 form-group form-group-textarea">
+                            <div>
+                                <textarea name="" id="mesage" class="form-control fs-5 p-3" placeholder="Your Message" rows="7"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5 p-5">
+                        <button class="btn btn-warning text-uppercase opacity-75 text-white p-2 btn-lg">send message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- ---footer--- -->
+        <section id="footer" class="mt-4">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-4 col-lg-4 mt-4">
+                        <p>Copyright © Your Website 2023</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div id="social" class="text-center p-4 d-flex align item-center justify-content-center">
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-twitter fs-5   text-white" id="sociale"></i>
+                            </div>
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-facebook fs-5 p-1 text-white" id="sociale"></i>
+                            </div>
+                            <div class="p-1 rounded-circle border bg-dark" id="soso">
+                                <i class="bi bi-linkedin fs-5 p-1  text-white" id="sociale"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 mt-4">
+                        <a href="#" class="text-dark">Privacy policy</a> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="text-dark">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
